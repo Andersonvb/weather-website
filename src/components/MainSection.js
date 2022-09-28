@@ -60,12 +60,12 @@ const PageLoaded = ({ cityData }) => {
   }, [cityData]);
 
   return (
-    <div className='px-5 py-10 flex flex-col items-center gap-3'>
+    <div className='px-5 pt-5 pb-20 flex flex-col items-center gap-3'>
       <img src={weatherImg} alt='weather' className='w-96' />
 
       <div className='pr-3 flex justify-center items-center gap-5'>
         <span className='text-2xl'>{cityData.list[0].weather[0].main}</span>
-        <img src={require(`../images/icons/${cityData.list[0].weather[0].icon}.png`)} alt='Weather icon' className='w-14' />
+        <img src={require(`../images/icons/${cityData.list[0].weather[0].icon}-black.png`)} alt='Weather icon' className='w-14' />
       </div>
       
       <h2 className='text-9xl'>{(parseFloat(cityData.list[0].main.temp) - 273.1).toFixed(2) + '°'}</h2>

@@ -9,7 +9,7 @@ const Day = ({ cityData, day }) => {
         }
       </span>
       <span className='text-white text-xl'>{(parseFloat(cityData.list[day].main.temp) - 272.15).toFixed(2) + '°'}</span>
-      <img src={require(`../images/icons/${cityData.list[day].weather[0].icon}.png`)} alt='weather-logo' className='w-12' />
+      <img src={require(`../images/icons/${cityData.list[day].weather[0].icon}-white.png`)} alt='weather-logo' className='w-12' />
     </div>
   );
 };

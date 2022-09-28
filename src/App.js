@@ -3,6 +3,9 @@ import SearchBox from './components/SearchBox';
 import MainSection from './components/MainSection';
 import DaysSection from './components/DaysSection';
 
+// TODO: 
+// 1. Show the current time in the main page.
+
 function App() {
 
   const [city, setCity] = useState('');

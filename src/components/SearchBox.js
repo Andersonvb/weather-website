@@ -17,7 +17,7 @@ const SearchBox = ({ searchBoxToApp }) => {
   return (
     <div>
       <form className='flex gap-5'>
-        <button onClick={handleSearchClick}><FaSearch className='text-xl' /></button>
+        <button onClick={handleSearchClick}><FaSearch className='text-xl hover:text-blue-700' /></button>
         <input type='text' placeholder='Search a location' onChange={handleChange} className='h-8 px-8 rounded-lg outline-none bg-slate-300 placeholder-slate-500'/>
       </form>
     </div>
