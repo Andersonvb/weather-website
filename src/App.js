@@ -15,7 +15,7 @@ function App() {
     <div className='pt-5 flex flex-col items-center'>
       <SearchBox searchBoxToApp={searchBoxToApp} />
       <MainSection city={city} />
-      <DaysSection />
+      <DaysSection city={city} />
     </div>
   );
 };
